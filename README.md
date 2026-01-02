@@ -45,6 +45,7 @@ La communication se fait via les ports standards Zabbix :
 Le serveur Zabbix est déployé de manière conteneurisée utilisant `docker` et `docker-compose`, garantissant une installation rapide et reproductible.
 
 ![Figure 1 : Diagramme de l'architecture réseau AWS et des flux de communication](captures/image-1.png)
+Figure 1 : Diagramme de l'architecture réseau AWS et des flux de communication
 
 ## Structure du projet
 
@@ -70,6 +71,7 @@ aws-zabbix-monitoring/
 
 
 ![Figure 2 : Instance EC2 en état Running](captures/image.png)
+Figure 2 : Instance EC2 en état Running
 
 
 ## Déploiement du serveur Zabbix
@@ -126,15 +128,20 @@ Les fichiers de configuration pré-configurés sont disponibles dans le dossier 
 5.  Redémarrer le service "Zabbix Agent" depuis la console des services (`services.msc`).
 
 ![Figure 3 : Connexion RDP au client Windows](captures/image-4.png)
+Figure 3 : Connexion RDP au client Windows
+
 ![Figure 4 : Configuration de l’agent Zabbix lors de l’installation sur Windows](captures/image-5.png)
+Figure 4 : Configuration de l’agent Zabbix lors de l’installation sur Windows
 
 ## Ajout des hôtes dans l’interface Zabbix
 
 1.  Se connecter à l'interface web (http://[IP-Publique-Serveur-Zabbix]).
 
 ![Figure 5 : Page de connexion de l’interface Web Zabbix via l’IP publique du serveur](captures/image-2.png)
+Figure 5 : Page de connexion de l’interface Web Zabbix via l’IP publique du serveur
 
 ![Figure 6 : Page de Dashboard de l’interface Web Zabbix](captures/image-3.png)
+Figure 6 : Page de Dashboard de l’interface Web Zabbix
 
 
 2.  Naviguer vers **Configuration > Hosts**.
@@ -157,6 +164,7 @@ Vérification du statut
 La réussite de la configuration est validée par l'icône ZBX passant au vert dans la liste des hôtes, indiquant une communication fonctionnelle.
 
 ![Figure 7 : Statut des hôtes Linux et Windows supervisés (ZBX vert)  dans Zabbix](captures/image-6.png)
+Figure 7 : Statut des hôtes Linux et Windows supervisés (ZBX vert)  dans Zabbix
 
 
 ## Sécurité et bonnes pratiques
@@ -182,8 +190,10 @@ Memory Usage : Consommation de la mémoire vive.
 System Uptime : Temps de disponibilité de la machine.
 
 ![Figure 8 : Graph Client Linux](captures/image-7.png)
+Figure 8 : Graph Client Linux
 
 ![Figure 9 : Graph Client Windows](captures/image-8.png)
+Figure 9 : Graph Client Windows
 
 ## Conclusion
 
