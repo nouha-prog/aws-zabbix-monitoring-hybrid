@@ -45,7 +45,7 @@ La communication se fait via les ports standards Zabbix :
 Le serveur Zabbix est déployé de manière conteneurisée utilisant `docker` et `docker-compose`, garantissant une installation rapide et reproductible.
 
 ![Figure 1 : Diagramme de l'architecture réseau AWS et des flux de communication](captures/image-1.png)
-Figure 1 : Diagramme de l'architecture réseau AWS et des flux de communication
+ Figure 1 : Diagramme de l'architecture réseau AWS et des flux de communication
 
 ## Structure du projet
 
