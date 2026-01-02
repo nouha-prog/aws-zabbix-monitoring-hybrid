@@ -44,7 +44,7 @@ La communication se fait via les ports standards Zabbix :
 
 Le serveur Zabbix est déployé de manière conteneurisée utilisant `docker` et `docker-compose`, garantissant une installation rapide et reproductible.
 
-![Figure 1 : Diagramme de l'architecture réseau AWS et des flux de communication](image-1.png)
+![Figure 1 : Diagramme de l'architecture réseau AWS et des flux de communication](captures/image-1.png)
 
 ## Structure du projet
 
@@ -69,7 +69,7 @@ aws-zabbix-monitoring/
 | **Windows Client** | Machine surveillée | Windows Server 2019/2022 | t2.small | 10050 (Agent Zabbix), 3389 (RDP) | Client Windows avec Zabbix Agent installé. |
 
 
-![Figure 2 : Instance EC2 en état Running](image.png)
+![Figure 2 : Instance EC2 en état Running](captures/image.png)
 
 
 ## Déploiement du serveur Zabbix
@@ -125,16 +125,16 @@ Les fichiers de configuration pré-configurés sont disponibles dans le dossier 
 4.  Éditer le fichier pour y mettre l'IP privée de votre serveur Zabbix.
 5.  Redémarrer le service "Zabbix Agent" depuis la console des services (`services.msc`).
 
-![Figure 3 : Connexion RDP au client Windows](image-4.png)
-![Figure 4 : Configuration de l’agent Zabbix lors de l’installation sur Windows](image-5.png)
+![Figure 3 : Connexion RDP au client Windows](captures/image-4.png)
+![Figure 4 : Configuration de l’agent Zabbix lors de l’installation sur Windows](captures/image-5.png)
 
 ## Ajout des hôtes dans l’interface Zabbix
 
 1.  Se connecter à l'interface web (http://[IP-Publique-Serveur-Zabbix]).
 
-![Figure 5 : Page de connexion de l’interface Web Zabbix via l’IP publique du serveur](image-2.png)
+![Figure 5 : Page de connexion de l’interface Web Zabbix via l’IP publique du serveur](captures/image-2.png)
 
-![Figure 6 : Page de Dashboard de l’interface Web Zabbix](image-3.png)
+![Figure 6 : Page de Dashboard de l’interface Web Zabbix](captures/image-3.png)
 
 
 2.  Naviguer vers **Configuration > Hosts**.
@@ -156,7 +156,7 @@ Windows : Windows by Zabbix agent
 Vérification du statut
 La réussite de la configuration est validée par l'icône ZBX passant au vert dans la liste des hôtes, indiquant une communication fonctionnelle.
 
-![Figure 7 : Statut des hôtes Linux et Windows supervisés (ZBX vert)  dans Zabbix](image-6.png)
+![Figure 7 : Statut des hôtes Linux et Windows supervisés (ZBX vert)  dans Zabbix](captures/image-6.png)
 
 
 ## Sécurité et bonnes pratiques
@@ -181,9 +181,9 @@ CPU Utilization : Charge processeur.
 Memory Usage : Consommation de la mémoire vive.
 System Uptime : Temps de disponibilité de la machine.
 
-![Figure 8 : Graph Client Linux](image-7.png)
+![Figure 8 : Graph Client Linux](captures/image-7.png)
 
-![Figure 9 : Graph Client Windows](image-8.png)
+![Figure 9 : Graph Client Windows](captures/image-8.png)
 
 ## Conclusion
 
